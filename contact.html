@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Contact - Alessandra Cruz Portfolio</title>
+</head>
+
+<body>
+    <header id="page-header">
+        <a href="./" class="logo">
+            <img src="images/resumelogo.png" alt="A black circle with the initials A and C linked within its borders" width="48px" height="48px" />
+            <span>Alessandra Cruz</span>
+        </a>
+        <nav id="main-nav">
+            <ul class="a">
+                <li><a href="./">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="a">
+        <h1>Contact Me</h1>
+        <hr>
+        <p>
+            If you'd like to contact me, fill out this form with your first name, your email, and a message about why you are contacting me.
+        </p>
+        <br>
+        <label for="first-name" >First Name:</label><br>
+        <input type="text" id="first-name" name="first-name" required>
+        <br>
+        <br>
+        <label for="user-email">Email:</label><br>
+        <input type="email" id="user-email" name="user-email" placeholder="example@test.org" required>
+        <br>
+        <br>
+        <label for="user-message">Message:</label><br>
+        <textarea id="form-message" name="form-message" rows="15" required></textarea>
+        <br>
+        <br>
+        <button id="form-button">Send Your Message</button>
+    </main>
+</body>
