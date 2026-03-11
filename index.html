@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Home - Alessandra Cruz Portfolio</title>
 </head>
@@ -31,7 +32,7 @@
 
     <main>
         <h1>Home</h1>
-
+        <hr>
         <section>
             <h1>Projects</h1>
             
@@ -61,6 +62,59 @@
                     <button id="card-button">View Blog</button>
                 </div>
             </div>
+        </section>
+
+        <hr>
+        <h1>Testimonials</h1>
+
+        <section>
+            <ul class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <li>
+                <figure class="p-10 bg-gray-100 rounded-xl h-60">
+                <blockquote class="italic text-gray-600 text-xl font-light mb-5">
+                    <p>CSCI 181 completely changed how I think about the internet. I finally understand the 'magic' behind the websites I use every day.</p>
+                </blockquote>
+
+                <figcaption class="flex items-center flex-row mt-4">
+                    <img class="rounded-full h-15 mr-3" src="images/unsplashheadshot1.png" alt="" />
+                    <div>
+                    <p class="text-lg">Loretta Jenkins</p>
+                    <p class="text-sm text-gray-400 font-normal">Freshman, Computer Science</p>
+                    </div>
+                </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure class="p-10 bg-gray-100 rounded-xl h-60">
+                <blockquote class="italic text-gray-600 text-xl font-light mb-5">
+                    <p>Now I have the confidence to build my own website. The instructor was really supportive and the material was always relevant.</p>
+                </blockquote>
+
+                <figcaption class="flex items-center flex-row mt-4">
+                    <img class="rounded-full h-15 mr-3" src="images/unsplashheadshot2.png" alt="" />
+                    <div>
+                    <p class="text-lg">Jessica Jones</p>
+                    <p class="text-sm text-gray-400 font-normal">Freshman, Software Engineering</p>
+                    </div>
+                </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure class="p-10 bg-gray-100 rounded-xl h-60">
+                <blockquote class="italic text-gray-600 text-xl font-light mb-5">
+                    <p>I learned so much about the principles of design and usability. I didn't know coding could be so fun and creative!</p>
+                </blockquote>
+
+                <figcaption class="flex items-center flex-row mt-4">
+                    <img class="rounded-full h-15 mr-3" src="images/unsplashheadshot3.png" alt="" />
+                    <div>
+                    <p class="text-lg">Hugh Morris</p>
+                    <p class="text-sm text-gray-400 font-normal">Junior, Media Arts</p>
+                    </div>
+                </figcaption>
+                </figure>
+            </li>          
+            </ul>
         </section>
     </main>
 </body>
