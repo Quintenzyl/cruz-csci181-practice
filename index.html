@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="scripts/theme.js" defer></script>
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Home - Alessandra Cruz Portfolio</title>
 </head>
@@ -15,11 +16,14 @@
             <span>Alessandra Cruz</span>
         </a>
         <nav id="main-nav">
-            <ul class="a">
+            <ul class="a" >
                 <li><a href="./">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button id="theme-toggle" type="button">
+                <p id="theme-message">Switch to Dark Mode</p>
+            </button>
         </nav>
     </header>
 
@@ -36,6 +40,7 @@
         <section>
             <h1>Projects</h1>
             
+            <div id="project-cards">
             <div class="card">
                 <img src="images/illustrationbackground.png" alt="A blurred abstract illustration">
                 <div class="container">
@@ -61,6 +66,7 @@
                     <p>A blog page meant to keep record of updates on several creative works I develop as well as giving insight on my writing and illustrative processes.</p>
                     <button id="card-button">View Blog</button>
                 </div>
+            </div>
             </div>
         </section>
 
