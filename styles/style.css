@@ -63,8 +63,6 @@ h1 {
     font-variant: small-caps;
     font-size: 2rem;
     font-weight: 800;
-    line-height: 2rem;
-    margin: 10px 0px;
 }
 
 h2 {
@@ -325,4 +323,31 @@ div.card img {
 
 #theme-toggle:hover {
     color: grey;
+}
+
+/* weather page */
+
+#weather-container {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 400px;
+    height: 200px;
+
+    border: solid black 3px;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+#weather-output {
+    text-align: center;
+    font-size: 100px;
+    margin: 10px;
+}
+
+#forecast-text { 
+    color: red;
 }

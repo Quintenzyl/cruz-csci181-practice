@@ -14,6 +14,5 @@ function changeTheme() {
     button_message.textContent = "Change to Dark Mode";
 } 
 
-
 // Event listener that uses function when button is clicked
 theme_button.addEventListener("click", changeTheme)
