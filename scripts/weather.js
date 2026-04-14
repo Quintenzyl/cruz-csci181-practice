@@ -10,20 +10,23 @@ const output_element = document.querySelector("#weather-output")
 function renderWeather() {
     if (is_loading) {
         output_element.innerHTML = "Loading...";
+        output_element.className = "loading-text";
+        return;
     }
     if (error_message) {
         output_element.innerHTML = "Error, problem retrieving weather data.";
+        output_element.className = "error-text"
+        return;
     }
     if (weather_data) {
-        const temp = weather_data.properties.periods[0].temperature;
-        const forecast = "test text";
-        forecast.className = "#weather-output p"
-        console.log(forecast.className);
-        output_element.innerHTML =  temp + "&deg;F" + "<br>" + forecast;
+        const current_period = weather_data.properties.periods[0];
+        const temp = current_period.temperature;
+        const forecast = current_period.shortForecast;
+        output_element.className = "weather-data-text"
+        output_element.innerHTML =  `<p class="temp-text">${temp}<sup>&deg;F</sup></p> <p class="forecast-text">${forecast}</p>`;
+        return;
     }
-    else {
-        output_element.innerHTML = "Weather data not available."
-    }
+    output_element.innerHTML = "Weather data not available.";
 }
 
 // step 4: create an async function

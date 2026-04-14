@@ -4,7 +4,7 @@
     --text: #000000;
 
     --link: rgb(98, 98, 212);
-    --link-hover: rgb(219, 45, 112);;
+    --link-hover: rgb(219, 45, 112);
 }
 
 .darkmode {
@@ -328,13 +328,12 @@ div.card img {
 /* weather page */
 
 #weather-container {
-    margin-top: 200px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
 
     width: 400px;
-    height: 200px;
+    height: auto;
 
     border: solid black 3px;
     border-radius: 10px;
@@ -342,12 +341,21 @@ div.card img {
     text-align: center;
 }
 
-#weather-output {
+.temp-text {
     text-align: center;
     font-size: 100px;
-    margin: 10px;
+
 }
 
-#forecast-text { 
-    color: red;
+.forecast-text { 
+    font-size: 30px;
+    color: gray;
+}
+
+.loading-text {
+    color: rgb(72, 72, 72);
+}
+
+.error-text {
+    color: rgb(101, 40, 40);
 }
